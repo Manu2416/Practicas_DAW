@@ -1,0 +1,19 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.padding-content {
+  padding: 2rem;
+}
+.title-size {
+  font-size: 3rem;
+}
+.text-size {
+  font-size: 2.5rem;
+}

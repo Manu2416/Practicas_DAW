@@ -1,0 +1,7 @@
+@mixin textSize($size) {
+    font-size: $size + rem;
+}
+@mixin cuadrar ($anchura,$altura){
+    width: $anchura + rem;
+    height: $altura + rem;
+}

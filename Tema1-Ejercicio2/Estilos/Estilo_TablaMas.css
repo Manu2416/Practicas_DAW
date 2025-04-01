@@ -1,0 +1,58 @@
+
+div{
+    width: 100%;
+
+   
+}
+
+thead{
+    font-size: 20px;
+    background-color: rgb(245, 246, 247);
+    height: 60px;
+    font-weight: bold;
+    text-align: justify;
+}
+.texto_izquierda{
+    text-align: left;
+}
+tbody{
+    text-align: center;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(245, 246, 247);
+}
+td{
+    padding: 20px;
+}
+div{
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.material-symbols-outlined{
+    color: green;
+}
+
+td{
+    justify-content: center;
+    align-items: center;
+}
+.boton-desplegar{
+    color: rgb(222, 36, 36);
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+.boton-desplegar:hover{
+    color: rgb(153, 26, 26);
+  
+}
+#fila_boton{
+    background-color: white;
+}
+
+.desplegable{
+    display: none;
+}

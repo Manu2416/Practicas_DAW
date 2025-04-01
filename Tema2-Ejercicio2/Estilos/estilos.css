@@ -1,0 +1,100 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.padding-content {
+  padding: 2rem;
+}
+.title-size {
+  font-size: 3rem;
+}
+.text-size {
+  font-size: 2.5rem;
+}
+.main_header {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  text-align: center;
+  height: 20vh;
+  background-color: #e8e8e8;
+  padding-bottom: 2rem;
+}
+.main_header .header_title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.main_header .header_text {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  width: 100%;
+  background-color: #7d7c7c;
+  padding-top: 2rem;
+}
+.info .info_left {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  padding: 2rem;
+  width: 30%;
+  height: 100%;
+  background-color: #eb0300;
+  color: white;
+}
+.info .info_left .info_list {
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+}
+.info .info_rigth {
+  background-color: white;
+  padding: 2rem;
+  width: 70%;
+  height: 100%;
+}
+.info .info_rigth .material-symbols-outlined {
+  font-size: 2rem;
+  margin-right: 0,5rem;
+  color: #eb0300;
+}
+.info .info_rigth .info_pay_boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  gap: 1.5rem;
+}
+.info .info_rigth .pay_box {
+  border: black solid 4px;
+  height: 7rem;
+  width: 100%;
+  border-radius: 15px;
+}
+.info .info_rigth .pay_box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.info_title {
+  font-size: 3rem;
+}
+.info_text {
+  font-size: 2.5rem;
+}

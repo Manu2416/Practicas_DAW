@@ -1,0 +1,14 @@
+@mixin cuadrar ($anchura,$altura){
+    width: $anchura + rem;
+    height: $altura + rem;
+}
+@mixin title($size){
+        font-size: $size + rem;
+        font-weight: bold;
+}
+@mixin center{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,111 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.border-card {
+  border-radius: 10px;
+  border: solid gray 2px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: solid gray 2px;
+  width: 15rem;
+  padding: 2rem;
+  height: 17rem;
+}
+.card__top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card__title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.card__list-item {
+  color: #aeaeae;
+}
+.card__list-item--bold {
+  font-weight: bold;
+}
+.card__price {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+.card__price--before {
+  text-decoration: line-through;
+  color: #aeaeae;
+  padding: 0;
+  margin: 0;
+}
+.card__price--now {
+  color: #cd1616;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.card__time {
+  color: #cd1616;
+  font-size: 0.75rem;
+}
+.card__promotion {
+  display: flex;
+  background-color: #cd1616;
+  width: 5.4em;
+  height: 1.8em;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+}
+.card__action {
+  display: flex;
+  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__action__link {
+  text-decoration: none;
+  color: #007bff;
+}
+.card__action__button {
+  font-size: 1.1rem;
+  background-color: #007bff;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0.25rem 1rem;
+  border: none;
+}

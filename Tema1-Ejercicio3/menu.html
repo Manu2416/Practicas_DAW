@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <section class="seccion-encabezado">
+        <header class="encabezado">
+            <article class="logo-principal">
+                <img src="./images/logo.png" alt="El Logo de la Empresa VASS">
+            </article>
+
+            <article class="nav-principal">
+                <nav class="navegador">
+                    <ul aria-labelledby="enlaces-lista">
+                        <li>
+                            <button class="tablink" onclick="openTab(event,'productos')">
+                                <h1>Productos</h1>
+                                <p class="subtitulo">Cuentas, tarjetas, hipotecas...</p>
+                            </button>
+
+                            
+                        </li>
+                        <li>
+                            <button class="tablink" onclick="openTab(event, 'promociones')">
+                                <h1>Promociones</h1>
+                                <p class="subtitulo">Hasta 250€ por tu nómina</p>
+                            </button>
+
+                        </li>
+                        <li>
+                            <button class="tablink" onclick="openTab(event,'privilegios')">
+                                <h1>Privilegios</h1>
+                                <p class="subtitulo">IKEA, Naturgy, ADT Alarmas...</p>
+                            </button>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </article>
+            
+        </header>
+    </section>
+
+    <section class="menu-principal" id="promociones">
+            <article class="cerrar">
+                <button id="btnCerrar" onclick="closeTab('promociones')"><span class="material-symbols-outlined">close</span></button>
+            </article>
+            <article class="lista-desplegable">
+                <ul class="lista-menu" aria-labelledby="destacados-lista">
+                    <h2 id="destacados-lista" class="titulo-lista">DESTACADOS</h2>
+                    <li class="regalo">
+                        <a href="#" title="Seguro de hogar con un 20% de ahorro">Seguro de hogar con un 20% de ahorro...</a>
+                    </li>
+                    <li class="regalo">
+                        <a href="#" title="Seguro de salud con hasta 3 meses gratis">Seguro de salud con hasta 3 meses gratis</a>
+                    </li>
+                </ul>
+            
+                <ul class="lista-menu" aria-labelledby="tiempo-limitado-lista">
+                    <h2 id="tiempo-limitado-lista" class="titulo-lista">POR TIEMPO LIMITADO</h2>
+                    <li class="corazon">
+                        <a href="#" title="Trae tu nómina y llévate hasta 250€">Trae tu nómina y llévate hasta 250€</a>
+                    </li>
+                </ul>
+            </article>
+            
+    </section>
+
+    <section class="menu-principal" id="productos">
+        <article class="cerrar">
+            <button id="btnCerrar" onclick="closeTab('productos')"><span class="material-symbols-outlined">close</span></button>
+        </article>
+        <article class="tabla-contenido">
+            <table class="tabla-principal">
+                <thead class="cabecera">
+                    <tr >
+                        <td>Email</td>
+                        <td>Nombre</td>
+                        <td>Primer Apellido</td>
+                        <td>Segundo Apellido</td>
+                        <td>Perfil</td>
+                        <td>Polizas Cliente</td>
+                    </tr>
+                </thead>
+                <tbody class="body-tabla-clientes">
+                    <tr>
+                        <td>a@vass.es</td>
+                        <td>Maria</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td>Perfil</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>b@vass.es</td>
+                        <td>Angel</td>
+                        <td>B</td>
+                        <td>B</td>
+                        <td>Perfil</td>
+                        <td>222</td>
+                    </tr>
+                    <tr>
+                        <td>c@vass.es</td>
+                        <td>Soporte</td>
+                        <td>Equipo</td>
+                        <td>Mantenimiento</td>
+                        <td>Administrador</td>
+                        <td>333</td>
+                    </tr>
+                    <tr>
+                        <td>d@vass.es</td>
+                        <td>Desarrollo</td>
+                        <td>Equipo</td>
+                        <td>Proyecto</td>
+                        <td>Developer</td>
+                        <td>444</td>
+                    </tr>
+                    <tr>
+                        <td>e@vass.es</td>
+                        <td>Eee</td>
+                        <td>E</td>
+                        <td>E</td>
+                        <td>Administrador</td>
+                        <td>555</td>
+                    </tr>
+                </tbody>
+            </table>
+          
+        </article>
+        </section>
+        <section class="menu-principal" id="privilegios">
+            <article class="cerrar">
+                <button id="btnCerrar" onclick="closeTab('privilegios')"><span class="material-symbols-outlined">close</span></button>
+            </article>
+            <article class="lista-desplegable">
+                <h2>No tienes privilegios</h2>
+               
+            </article>
+        </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla ver mas</title>
+    <link rel="stylesheet" href="../Estilos/Estilo_TablaMas.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+    <script src="../Scripts/script_tabla.js"></script>
+</head>
+<body>
+    <h1>Compara las Coberturas</h1>
+    <div>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <td><p>Coberturas</p></td>
+                    <td><p>Seguro a Terceros Básico</p></td>
+                    <td><p>Seguro a Terceros Ampliado</td>
+                    <td><p>Seguro a Todo riesgo Con Franquicia</p>
+                    </td>
+                    <td><p>Seguro a Todo riesgo Con Franquicia</p></td>
+                </tr>
+            </thead>
+            <tbody id="filas_body">
+                <tr>
+                    <td class="texto_izquierda">Seguro Obligatorio</td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr >
+                    <td class="texto_izquierda">Responsabilidad civil suplementaria</td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr >
+                    <td class="texto_izquierda">Responsabilidad civil por remolques y caravanas y por los objetos...</td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr >
+                    <td class="texto_izquierda">Responsabilidad civil ampliada</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                </tr>
+                <tr >
+                    <td class="texto_izquierda">Responsabilidad civil del tomador y conductor declarado como ciclista</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                </tr>
+                <tr >
+                    <td class="texto_izquierda">Rotura de parabrisas y lunas</td>
+                    <td><span class="material-symbols-outlined"></span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr >
+                    <td class="texto_izquierda">Robo y hurto del Vehiculo </td>
+                    <td><span class="material-symbols-outlined"></span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr >
+                    <td class="texto_izquierda">Incencio del Vehiculo</td>
+                    <td><span class="material-symbols-outlined"></span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <!-- aqui empieza la otra tabla -->
+                <tr class="desplegable">
+                    <td class="texto_izquierda">Defensa juridica y reclamacion de daños</td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr class="desplegable">
+                    <td class="texto_izquierda">Defensa en multas de tráfico</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                </tr>
+                <tr class="desplegable">
+                    <td class="texto_izquierda">Subsidio por privación del permiso de conducir </td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                </tr>
+                <tr class="desplegable" >
+                    <td class="texto_izquierda">Limpieza del Vehiculo por translado de heridos </td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr class="desplegable">
+                    <td class="texto_izquierda">Intereses y gastos del préstamo para la reparación del vehículo</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                </tr>
+                <tr class="desplegable" >
+                    <td class="texto_izquierda">Imdemnización por inmovilizacion</td>
+                    <td></td>
+                    <td></td>
+                    <td>Opcional</td>
+                    <td>Opcional</td>
+                </tr>
+                <tr class="desplegable" >
+                    <td class="texto_izquierda">Libre elección del taller</td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                    <td><span class="material-symbols-outlined">check</span></td>
+                </tr>
+                <tr id="fila_boton"><td colspan="5"><button id="boton" class="boton-desplegar" onclick="desplegartabla()">Ver tabla completa </button></td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

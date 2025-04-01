@@ -1,0 +1,162 @@
+@use "mixins";
+@use "variables";
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+%flex-row{
+    display: flex;
+    flex-direction: row;
+}
+%title{
+    padding-top: 2rem;
+    margin-right: 2rem;
+    font-weight: bold;
+    @include mixins.textSize(3);
+}
+
+.main_header{
+    @extend %flex-column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    background-color: rgb(231, 231, 231);
+    &__title{
+        @include mixins.textSize(3);
+    }
+    &__subtitle{
+        margin-top: 0;
+        @include mixins.textSize(1.8);
+    }
+}
+
+.info{
+    @extend %flex-row;
+    height: 40rem;
+
+    &_left{
+        width: 35%;
+        height: 100%;
+        padding: 0;
+        padding-left: 2rem;
+        margin: 0;
+        color: variables.$secundary-color;
+        background-color: variables.$primary-color;
+      
+        &_title{
+            @extend %title;
+            margin-top: 4rem;
+        }
+        &_text{
+            @include mixins.textSize(2.7);
+            margin-right: 2rem;
+        }
+        &_list {
+            display: flex;
+            align-items: flex-start;
+            margin-right: 2rem;
+            @include mixins.textSize(2.7);
+            margin-top: 6rem;
+        }
+    }
+
+    &_rigth{
+        padding-left: 2rem;
+        margin: 0;
+        width: 65%;
+        height: 100%;
+       
+        &_title{
+            @extend %title;
+            color: rgb(0, 0, 0);
+        }
+        &_text{
+            display: flex;
+            @include mixins.textSize(2.5);
+        }
+        &__pay__boxes{
+            @extend %flex-row;
+        }
+    }
+
+    .material-symbols-outlined{
+        @include mixins.textSize(2.7);
+        color: variables.$primary-color;
+    }
+
+    &__pay__boxes{
+        @extend %flex-row;
+        gap: 4em;
+        padding-left: 2rem;
+        margin-top: 6rem;
+    }
+
+    .pay_box{
+        @include mixins.cuadrar(10,5);
+        border: solid 3px;
+        border-radius: 15px;
+    }
+
+    .pay_box img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main_header {
+        height: auto;
+        padding: 1rem;
+        align-items: flex-start;
+    }
+        .info {
+            display: flex;
+            flex-direction: column; 
+            height: auto; 
+         
+
+            &_left,
+            &_rigth {
+                width: 100%;
+                padding: 1rem;
+                height: auto;  
+            }
+
+            &_left {
+                margin-bottom: 1rem; 
+            }
+
+            &_rigth {
+                margin-bottom: 1rem;
+            }
+
+            &_list {
+                margin-top: 1rem; 
+                margin-right: 0; 
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+        }
+    
+
+    .pay_box {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .pay_box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .info__pay__boxes {
+        gap: 2rem;
+        flex-direction: column; 
+    }
+}
+

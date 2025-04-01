@@ -1,0 +1,185 @@
+body{
+    overflow: auto;
+    height: 1000px;
+}
+.seccion-encabezado {
+    position: sticky;
+    height: 120px;
+    width: 100%;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+.subtitulo {
+    opacity: 50%;
+}
+
+.subtitulo.hidden {
+    opacity: 0;
+}
+
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+
+.logo-principal {
+    width: 200px;
+    height: 50px;
+    border: black solid 2px;
+}
+
+.logo-principal img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.navegador ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.navegador ul li {
+    padding: 15px;
+}
+
+.navegador button {
+    border: none;
+    background: none;
+    color: black;
+    opacity: 60%; 
+    
+}
+
+.navegador button:hover {
+    opacity: 100%; 
+}
+
+.navegador button.active {
+    color: #000000; 
+    opacity: 100%;  
+}
+
+.navegador h1 {
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+}
+
+.navegador p {
+    font-size: 25px;
+    margin: 5px 0 0 0;
+    color: rgb(0, 0, 0);
+    opacity: 40%;
+}
+
+.menu-principal {
+    display: none;
+    background-color: rgb(39, 97, 122);
+    width: 100%;
+    height: 500px;
+}
+
+.menu-principal.active {
+    display: block;
+}
+
+.cerrar {
+    display: flex;
+    justify-content: end;
+}
+
+.cerrar button {
+    background: none;
+    border: none;
+    height: 100px;
+    width: 100px;
+}
+
+.cerrar button span {
+    font-size: 60px;
+    color: white;
+}
+
+.lista-desplegable {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.lista-menu {
+    padding-left: 100px;
+    list-style: none;
+}
+
+.lista-menu li {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.titulo-lista {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.lista-menu li a {
+    position: relative; 
+    text-decoration: none; 
+    padding-right: 30px; 
+}
+
+.lista-menu li a::after {
+    content: "arrow_forward"; 
+    font-family: "Material Symbols Outlined";
+    font-size: 30px; 
+    right: -10px;
+   
+    position: absolute; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.lista-menu li a:hover::after {
+    opacity: 1; 
+}
+
+ul .regalo::before {
+    content: "featured_seasonal_and_gifts";
+    font-family: "Material Symbols Outlined";
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.regalo a {
+    color: white;
+    text-decoration: none;
+}
+
+ul .corazon::before {
+    content: "favorite";
+    font-family: "Material Symbols Outlined";
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.corazon a {
+    color: white;
+    text-decoration: none;
+}
+
+.tabla-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tabla-contenido table{
+    border: solid white 1px;
+}

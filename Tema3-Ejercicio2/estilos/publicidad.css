@@ -1,0 +1,135 @@
+.main_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__pay__boxes, .info_rigth__pay__boxes, .info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info_rigth_title, .info_left_title {
+  padding-top: 2rem;
+  margin-right: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.main_header {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+  background-color: rgb(231, 231, 231);
+}
+.main_header__title {
+  font-size: 3rem;
+}
+.main_header__subtitle {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.info {
+  height: 40rem;
+}
+.info_left {
+  width: 35%;
+  height: 100%;
+  padding: 0;
+  padding-left: 2rem;
+  margin: 0;
+  color: white;
+  background-color: rgb(235, 3, 0);
+}
+.info_left_title {
+  margin-top: 4rem;
+}
+.info_left_text {
+  font-size: 2.7rem;
+  margin-right: 2rem;
+}
+.info_left_list {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 2rem;
+  font-size: 2.7rem;
+  margin-top: 6rem;
+}
+.info_rigth {
+  padding-left: 2rem;
+  margin: 0;
+  width: 65%;
+  height: 100%;
+}
+.info_rigth_title {
+  color: rgb(0, 0, 0);
+}
+.info_rigth_text {
+  display: flex;
+  font-size: 2.5rem;
+}
+.info .material-symbols-outlined {
+  font-size: 2.7rem;
+  color: rgb(235, 3, 0);
+}
+.info__pay__boxes {
+  gap: 4em;
+  padding-left: 2rem;
+  margin-top: 6rem;
+}
+.info .pay_box {
+  width: 10rem;
+  height: 5rem;
+  border: solid 3px;
+  border-radius: 15px;
+}
+.info .pay_box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .main_header {
+    height: auto;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .info_left, .info_rigth {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+  .info_left {
+    margin-bottom: 1rem;
+  }
+  .info_rigth {
+    margin-bottom: 1rem;
+  }
+  .info_list {
+    margin-top: 1rem;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pay_box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .pay_box img {
+    width: 100%;
+    height: auto;
+  }
+  .info__pay__boxes {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=publicidad.css.map */

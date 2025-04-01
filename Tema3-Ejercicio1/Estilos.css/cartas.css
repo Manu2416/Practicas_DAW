@@ -1,0 +1,91 @@
+.cards .card__bottom, .cards .card__top, .cards .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card__action, .cards .card__price {
+  display: flex;
+  flex-direction: row;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+.cards .card {
+  background-color: white;
+  width: 15rem;
+  height: 17rem;
+  border-radius: 10px;
+  border: solid gray 2px;
+  padding: 2rem;
+}
+.cards .card__top {
+  align-items: flex-start;
+}
+.cards .card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.cards .card__list {
+  list-style: none;
+  opacity: 50%;
+  margin: 0;
+  padding: 0;
+}
+.cards .card__list-item--bold {
+  font-weight: bold;
+}
+.cards .card__bottom {
+  margin-top: auto;
+}
+.cards .card__promotion {
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(202, 5, 5);
+  width: 6rem;
+  height: 2rem;
+}
+.cards .card__price {
+  padding: 0;
+  height: 4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.cards .card__price--before {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+.cards .card__price--now {
+  margin-left: 1rem;
+  color: rgb(202, 5, 5);
+}
+.cards .card__time {
+  margin: 0;
+  color: rgb(202, 5, 5);
+}
+.cards .card__action {
+  align-items: center;
+}
+.cards .card__action__button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  width: 6.5rem;
+  height: 2rem;
+  background-color: rgb(51, 115, 179);
+}
+.cards .card__action__link {
+  text-decoration: none;
+  margin-left: 1.2rem;
+  color: rgb(51, 115, 179);
+}/*# sourceMappingURL=cartas.css.map */

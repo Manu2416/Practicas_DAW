@@ -1,0 +1,27 @@
+.accordion{
+    --bs-accordion-active-color: green;
+    --bs-accordion-active-bg: white;
+    &-item{
+
+        margin-bottom: 1rem; 
+        border: 1px solid #000000; 
+        border-top: none;
+        border-radius: 0.25rem; 
+    }
+    &-button{
+        border-top: 1px solid #000000; 
+        border-radius: 0.25rem;
+        font-weight: bold;
+        --bs-accordion-btn-icon-width: 0.8rem;
+        --bs-accordion-btn-active-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" d="M8 1v14M1 8h14" stroke="green" stroke-width="2"/></svg>');
+        --bs-accordion-btn-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" d="M8 1v14M1 8h14" stroke="green" stroke-width="2"/></svg>');
+        &:not(.collapsed)::after {
+            transform: rotate(45deg);
+        }
+        &:focus {
+            box-shadow: none;
+          }
+       
+        
+    }
+}

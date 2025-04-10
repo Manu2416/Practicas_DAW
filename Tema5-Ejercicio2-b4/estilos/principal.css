@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.footer__title {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+}
+.btn__title {
+  font-size: 2rem;
+}
+.btn__title--selected {
+  color: rgb(0, 255, 0);
+}
+.btn__icon {
+  font-size: 2rem;
+  align-items: center;
+  color: rgb(0, 255, 0);
+}
+.btn__icon--selected {
+  rotate: 45deg;
+}/*# sourceMappingURL=principal.css.map */

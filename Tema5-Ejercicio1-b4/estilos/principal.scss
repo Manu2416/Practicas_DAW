@@ -1,0 +1,28 @@
+.columns{
+    padding-top: 4rem;
+}
+.icon-container {
+    color: white;
+    height: 50%;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    &--blue{
+        background-color: blue;
+    }
+    &--yellow{
+        background-color: rgb(154, 154, 34);
+    }
+    &--red{
+        background-color: red;
+    }
+    &--green{
+        background-color: rgb(53, 180, 53);
+    }
+    &--purple{
+        background-color: rgb(125, 33, 125);
+    }
+  }

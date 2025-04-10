@@ -1,0 +1,31 @@
+@use "mixin";
+@use "variables";
+@use "card";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;     
+    min-height: 100vh;          
+}
+
+.cards-container{
+    height: 40rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+    @include mixin.responsive {
+        flex-wrap: wrap;
+      }
+}
+

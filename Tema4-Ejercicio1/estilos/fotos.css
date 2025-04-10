@@ -1,1 +1,68 @@
-/*# sourceMappingURL=fotos.css.map */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 33rem;
+  align-self: flex-start;
+  transition: transform 0.5s ease-out, box-shadow 0.5s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.438);
+}
+.card__image {
+  width: 100%;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.card__title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+.card__text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card__link {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  opacity: 75%;
+  color: rgb(43, 42, 42);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card--botton {
+  align-self: flex-end;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cards-container {
+  height: 40rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+@media (max-width: 1024px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=fotos.css.map */

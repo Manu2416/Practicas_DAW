@@ -1,0 +1,109 @@
+@use "variables" as *;
+@use "mixin" as *;
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    &--header{
+        width: 100%;
+        display: flex;
+        height: 10r;
+        width: 20rem;
+        padding: 2rem;
+       
+    }
+    &-left{
+        @include header-display();
+        justify-content: center;
+       
+        height: 10rem;
+        width: 10rem;
+        &__title{
+            font-size: 2rem;
+        }
+        &__text{
+            margin-top: 1rem;
+            opacity: 50%;
+        }
+    }
+    &-right{
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        width: 10rem;
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+      }
+    }
+    &--body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &__option{
+            display: flex;
+            padding: 2rem;
+            align-items: center;
+            
+        }
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;  
+            height: 3rem; 
+            border-radius: 50%; 
+            &--yellow{
+                background-color: $color-one;   
+            } 
+            &--green{
+                background-color: $color-two;
+            }
+        }
+        
+        &__feature{
+               display: flex;
+               flex-direction: column;
+               padding-left: 1rem;
+                &--opacity{
+                    padding-left: 1rem;
+                    opacity: 75%;
+                    font-size: 1rem;
+                }
+
+        }
+        &__price{  
+       
+            padding-top: 0;
+            margin-top: 0;
+            padding-left: 1rem;
+            justify-content: start;
+            margin-left: 5rem;
+        }
+        &__button-container{
+            height: 5rem;
+            width: 80%;
+            padding: 2rem;
+            
+        }
+        &__button{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size:1rem;
+            background: none;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+        }
+      
+        .material-symbols-outlined {
+            font-size: 2rem; 
+        }
+        
+    }
+
+   
+}

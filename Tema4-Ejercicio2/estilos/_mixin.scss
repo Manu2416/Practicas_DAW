@@ -1,0 +1,10 @@
+@mixin header-display{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+@mixin responsive {
+  @media (max-width: 1024px) { 
+    @content;
+  }
+}

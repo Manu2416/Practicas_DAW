@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.columns {
+  padding: 2rem;
+}
+
+.icon-container {
+  border: 1px solid black;
+  color: white;
+  height: 50%;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.icon-container--blue {
+  background-color: blue;
+}
+.icon-container--yellow {
+  background-color: rgb(154, 154, 34);
+}
+.icon-container--red {
+  background-color: red;
+}
+.icon-container--green {
+  background-color: rgb(53, 180, 53);
+}
+.icon-container--purple {
+  background-color: rgb(125, 33, 125);
+}/*# sourceMappingURL=principal.css.map */

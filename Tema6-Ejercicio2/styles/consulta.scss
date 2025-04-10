@@ -1,0 +1,135 @@
+@use "variables.scss" as *;
+
+.fondo-imagen {
+  background-image: url(../images/fondo_joven_1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  width: 100%;  
+ 
+}
+.consulta-title-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: $primary-color;
+}
+.consulta-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.consulta-info {
+  background-color: white;
+  align-items: center;
+  padding: 0;
+  &-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .nav-item {
+      flex: 1; 
+    }
+
+    .nav-link {
+      width: 100%;
+      background-color: rgba(206, 206, 206, 0.267);
+      color: $primary-color;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      &.active {
+        background-color: rgb(255, 255, 255);
+        color: $primary-color;
+        border-bottom: 4px solid;
+      }
+    }
+  }
+
+  &-tab {
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.tab-content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30rem;
+}
+.tab-pane{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.tab-elements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+  &-title{
+    color: $primary-color;
+    font-size: 2.5rem;
+  }
+  &-text{
+    width: 80%;
+    font-size: 1.4rem;
+
+  }
+  &-button{
+    background: none;
+    margin-top: 1.5rem;
+    height: 3rem;
+    width: 25rem;
+    font-weight: bold;
+    &:hover{
+      background-color: $primary-color--opacity;
+      font-weight: bold;
+      color: white;
+      transition: background-color 0.5s ease-in-out, color 0.5s ease;
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  .consulta-info-nav {
+    flex-direction: column; 
+  }
+  .consulta-title-container{
+    visibility: hidden;
+  }
+  .fondo-imagen {
+    background-size: contain; 
+    background-position: top center; 
+    background-repeat: no-repeat;
+  }
+
+  .nav-item {
+    width: 100%; 
+  }
+
+  .nav-link {
+    padding: 1rem; 
+  }
+
+  .tab-content {
+    flex-direction: column;
+  }
+
+  .tab-pane {
+    width: 100%; 
+  }
+}

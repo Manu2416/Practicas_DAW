@@ -1,0 +1,67 @@
+.container-form {
+  max-height: 12rem;
+}
+
+.input {
+  height: 0.5rem;
+  width: 100%;
+}
+
+.form {
+  width: 35rem;
+}
+.form_title {
+  padding: 0;
+  margin: 0;
+}
+.form_title--green {
+  color: green;
+}
+.form-check {
+  padding: 0.25rem;
+}
+.form_text--red {
+  color: red;
+}
+.form-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-button-container .btn.form-button-container_button {
+  background-color: red;
+  color: white;
+  width: 10rem;
+}
+
+.modal-body {
+  min-height: 20rem;
+}
+
+.btn.politic {
+  color: green;
+}
+
+.form-label {
+  padding-top: 1.5rem;
+  opacity: 50%;
+}
+
+.msg {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: none;
+}
+.msg.success {
+  color: rgb(76, 205, 76);
+  background-color: rgb(144, 255, 144);
+  display: block;
+}
+.msg.error {
+  color: red;
+  background-color: pink;
+  display: block;
+}/*# sourceMappingURL=Consultas.css.map */

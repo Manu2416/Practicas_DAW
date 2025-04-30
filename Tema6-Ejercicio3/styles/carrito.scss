@@ -1,0 +1,82 @@
+@use "variables" as *;
+.carrito-body.tr{
+ 
+    display: flex;
+    gap: 10rem;
+  
+}
+.table {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 2rem; 
+    &__title{
+      border: none;
+      color: $primary-color;
+    }
+    &-name{
+        color: black;
+    }
+   .color-celda{
+    color: $primary-color;
+    &--bold{
+        font-weight: bold;
+    }
+   }
+  }
+  
+.botton {
+    background-color: rgb(223, 221, 221);
+    padding: 2rem;
+    border-radius: 15px;
+  
+    &-btn {
+      display: flex;
+      padding-left: 3rem;
+    }
+  
+    &-value {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 3rem;
+      &-total{
+        margin-left: 1rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  
+  .btn {
+    &.btn-checkout {
+      background-color: rebeccapurple;
+      color: white;
+      border: none;
+      border-radius: 0.25rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      padding: 0 1rem;
+    }
+  
+    &.btn-return {
+      border: none;
+      border-radius: 0.25rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      padding: 0 1rem;
+      margin-left: 2rem;
+    }
+  }
+
+  .cantidad-input {
+    width: 50px;  
+    height: 30px;
+    padding: 0.25rem; 
+}
+  
+  

@@ -6,8 +6,6 @@ function seleccion(url,text){
     const title = document.getElementsByClassName("consulta-title")[0];
     const fondo = document.getElementsByClassName("fondo-imagen")[0];
     fondo.style.backgroundImage = `url(${url})`;
-    fondo.style.backgroundSize = 'cover';  // Asegura que la imagen cubra toda la pantalla
-    fondo.style.backgroundPosition = 'center';  // Centra la imagen
     title.innerHTML = text;
 }
 
